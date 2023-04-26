@@ -1,15 +1,15 @@
 // Fontawesome
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-@import "~@fortawesome/fontawesome-free/scss/brands.scss";
-@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 
-@import '~overlayscrollbars/css/OverlayScrollbars.min.css';
+@import 'node_modules/overlayscrollbars/css/OverlayScrollbars.min.css';
 
 // Bootstrap
 // ---------------------------------------------------
-@import '~bootstrap/scss/functions';
-@import '~admin-lte/build/scss/bootstrap-variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/admin-lte/build/scss/bootstrap-variables';
 
 // Custom Theme Color START
 
@@ -17,18 +17,18 @@
 
 // Variables and Mixins
 // ---------------------------------------------------
-@import '~admin-lte/build/scss/variables';
-@import '~admin-lte/build/scss/variables-alt';
-@import '~admin-lte/build/scss/mixins';
+@import 'node_modules/admin-lte/build/scss/variables';
+@import 'node_modules/admin-lte/build/scss/variables-alt';
+@import 'node_modules/admin-lte/build/scss/mixins';
 
-@import '~bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap/scss/bootstrap';
 
-@import '~admin-lte/build/scss/parts/core';
-@import '~admin-lte/build/scss/parts/components';
-@import '~admin-lte/build/scss/parts/extra-components';
-@import '~admin-lte/build/scss/parts/pages';
-@import '~admin-lte/build/scss/parts/plugins';
-@import '~admin-lte/build/scss/parts/miscellaneous';
+@import 'node_modules/admin-lte/build/scss/parts/core';
+@import 'node_modules/admin-lte/build/scss/parts/components';
+@import 'node_modules/admin-lte/build/scss/parts/extra-components';
+@import 'node_modules/admin-lte/build/scss/parts/pages';
+@import 'node_modules/admin-lte/build/scss/parts/plugins';
+@import 'node_modules/admin-lte/build/scss/parts/miscellaneous';
 
 // Custom Style START
 @import 'custom';

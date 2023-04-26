@@ -137,18 +137,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
     }
 
     /**
-     * Basic tests shared across all methods
-     *
-     * @return void
-     */
-    protected function basicTests()
-    {
-        $this->assertFalse($this->filesystem->exists(base_path('tailwind.config.js')));
-        $this->assertFalse($this->filesystem->exists(resource_path('css')));
-        $this->assertTrue($this->filesystem->exists(base_path('webpack.mix.js')));
-    }
-
-    /**
      * Basic tests shared across all livewire test methods
      *
      * @return void

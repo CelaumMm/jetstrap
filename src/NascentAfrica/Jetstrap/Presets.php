@@ -118,11 +118,12 @@ class Presets
         Helpers::updateNodePackages(function ($packages) {
             return [
                     "@fortawesome/fontawesome-free" => "^5.15.1",
-                    "admin-lte" => "^3.1.0",
+                    "admin-lte" => "^3.2.0-rc",
                     'bootstrap' => '^4.6.0',
                     'jquery' => '^3.5.1',
                     'popper.js' => '^1.16.1',
-                    "overlayscrollbars" => "^1.13.0"
+                    "overlayscrollbars" => "^1.13.0",
+                    "sass" => "^1.62.1",
                 ] + $packages;
         });
 

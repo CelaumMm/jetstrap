@@ -35,16 +35,28 @@ class InstallCommand extends Command
         $this->info('Performing swap...');
 
         // Remove Tailwind Configuration...
-        if ((new Filesystem)->exists(base_path('tailwind.config.js'))) {
-            (new Filesystem)->delete(base_path('tailwind.config.js'));
-        }
+        // if ((new Filesystem)->exists(base_path('tailwind.config.js'))) {
+            // (new Filesystem)->delete(base_path('tailwind.config.js'));
+        // }
 
         // Bootstrap Configuration...
         copy(__DIR__.'/../../../../stubs/webpack.mix.js', base_path('webpack.mix.js'));
         copy(__DIR__.'/../../../../stubs/webpack.config.js', base_path('webpack.config.js'));
 
+        // Fix Errors Vite...
+        if ((new Filesystem)->exists(base_path('postcss.config.js'))) {
+            (new Filesystem)->delete(base_path('postcss.config.js'));
+        }
+
+        if ((new Filesystem)->exists(base_path('vite.config.js'))) {
+            (new Filesystem)->delete(base_path('vite.config.js'));
+        }
+
+        copy(__DIR__.'/../../../../postcss.config.js', base_path('postcss.config.js'));
+        copy(__DIR__.'/../../../../vite.config.js', base_path('vite.config.js'));
+
         // Assets...
-        (new Filesystem)->deleteDirectory(resource_path('css'));
+        // (new Filesystem)->deleteDirectory(resource_path('css'));
         (new Filesystem)->ensureDirectoryExists(resource_path('sass'));
         (new Filesystem)->ensureDirectoryExists(resource_path('js'));
         (new Filesystem)->ensureDirectoryExists(resource_path('views'));

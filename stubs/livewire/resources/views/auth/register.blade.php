@@ -10,7 +10,7 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
 
-                <div class="mb-3">
+                <div class="form-group">
                     <x-jet-label value="{{ __('Name') }}" />
 
                     <x-jet-input class="{{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="name"
@@ -18,7 +18,7 @@
                     <x-jet-input-error for="name"></x-jet-input-error>
                 </div>
 
-                <div class="mb-3">
+                <div class="form-group">
                     <x-jet-label value="{{ __('Email') }}" />
 
                     <x-jet-input class="{{ $errors->has('email') ? 'is-invalid' : '' }}" type="email" name="email"
@@ -26,7 +26,7 @@
                     <x-jet-input-error for="email"></x-jet-input-error>
                 </div>
 
-                <div class="mb-3">
+                <div class="form-group">
                     <x-jet-label value="{{ __('Password') }}" />
 
                     <x-jet-input class="{{ $errors->has('password') ? 'is-invalid' : '' }}" type="password"
@@ -34,14 +34,14 @@
                     <x-jet-input-error for="password"></x-jet-input-error>
                 </div>
 
-                <div class="mb-3">
+                <div class="form-group">
                     <x-jet-label value="{{ __('Confirm Password') }}" />
 
                     <x-jet-input class="form-control" type="password" name="password_confirmation" required autocomplete="new-password" />
                 </div>
 
                 @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                    <div class="mb-3">
+                    <div class="form-group">
                         <div class="custom-control custom-checkbox">
                             <x-jet-checkbox id="terms" name="terms" />
                             <label class="custom-control-label" for="terms">
@@ -56,7 +56,7 @@
 
                 <div class="mb-0">
                     <div class="d-flex justify-content-end align-items-baseline">
-                        <a class="text-muted me-3 text-decoration-none" href="{{ route('login') }}">
+                        <a class="text-muted mr-3 text-decoration-none" href="{{ route('login') }}">
                             {{ __('Already registered?') }}
                         </a>
 

@@ -60,6 +60,25 @@ Use Composer to install Jetstrap into your new Laravel project as dev dependency
 composer require nascent-africa/jetstrap --dev
 ```
 
+If official repository doesn't work with laravel 10 then change composer.json with config
+```
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/CelaumMm/jetstrap"
+        }
+    ],
+    "require-dev": {
+        "nascent-africa/jetstrap": "dev-main"
+    }
+}
+```
+Run command to update composer
+```bash
+composer update
+```
+
 Regardless how you install Jetstream, Jetstrap commands are very similar to that
 of Jetstream as it accepts the name of the stack you would like to swap (livewire or inertia).
 
