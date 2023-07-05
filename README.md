@@ -66,7 +66,7 @@ If official repository doesn't work with laravel 10 then change composer.json wi
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/CelaumMm/jetstrap"
+            "url": "https://github.com/mavazca/jetstrap"
         }
     ],
     "require-dev": {
